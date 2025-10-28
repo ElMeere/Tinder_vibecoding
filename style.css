@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #000000 0%, #333333 100%);
   overflow: hidden;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -70,8 +70,8 @@ body {
   width: 90vw;
   max-width: 400px;
   height: 70vh;
-  background: #FFFFFF;
-  padding-bottom: 40px;
+  background: #ffffff;
+  padding-bottom: 80px;
   border-radius: 20px;
   overflow: hidden;
   position: absolute;
@@ -81,6 +81,7 @@ body {
   cursor: -moz-grab;
   cursor: grab;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ff6b35;
 }
 
 .moving.tinder--card {
@@ -91,7 +92,10 @@ body {
 }
 
 .tinder--card img {
-  max-width: 100%;
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  object-position: center;
   pointer-events: none;
 }
 
@@ -100,17 +104,18 @@ body {
   font-size: 28px;
   padding: 0 16px;
   pointer-events: none;
-  color: #333;
+  color: #ff6b35;
   font-weight: 600;
 }
 
 .tinder--card p {
   margin-top: 24px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 0 16px;
   pointer-events: none;
-  color: #666;
+  color: #000000;
   line-height: 1.4;
+  margin-bottom: 20px;
 }
 
 .tinder--buttons {
@@ -124,7 +129,7 @@ body {
   line-height: 60px;
   width: 60px;
   border: 0;
-  background: #FFFFFF;
+  background: #ff6b35;
   display: inline-block;
   margin: 0 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -141,9 +146,9 @@ body {
 }
 
 .fa-heart {
-  color: #FF6B6B;
+  color: #ffffff;
 }
 
 .fa-remove {
-  color: #A8A8A8;
+  color: #000000;
 }
